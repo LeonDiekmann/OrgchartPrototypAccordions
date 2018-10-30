@@ -389,10 +389,10 @@ export default class ExternViewAccordion extends React.Component {
                             >
                                 <td>
                                     <div
-                                        className={this.state.open === 9 ? "tab chayns__background-color--0 active" : "tab chayns__background-color--0"}
+                                        className={this.state.open === 9 && this.state.complex === 1 || this.state.complex === 2 || this.state.complex === 3 ? "tab chayns__background-color--0 complexActive" : this.state.open === 9 ? "tab chayns__background-color--0 active" : "tab chayns__background-color--0"}
                                         onClick={() => {
                                             if (this.state.open != 9)
-                                                this.setState({ open: 9, complex: 1, notActive: true })
+                                                this.setState({ open: 9, notActive: true })
                                             else {
                                                 this.setState({ open: 0 })
                                             }
@@ -463,7 +463,7 @@ export default class ExternViewAccordion extends React.Component {
                                     >
                                             <td>
                                                 <div
-                                                    className={this.state.complex === 1 ? "tab chayns__background-color--0 active" : "tab chayns__background-color--0"}
+                                                    className={this.state.complex === 1 | this.state.complex === 0 ? "tab chayns__background-color--0 active" : "tab chayns__background-color--0"}
                                                     onClick={() => {
                                                         if (this.state.complex != 1)
                                                             this.setState({ complex: 1 })
@@ -486,7 +486,7 @@ export default class ExternViewAccordion extends React.Component {
                                             </td>
                                             <td>
                                                 <div
-                                                    className={this.state.complex === 2 ? 'tab chayns__background-color--0 active' : 'tab chayns__background-color--0'}
+                                                    className={this.state.complex === 2 | this.state.complex === 0 ? 'tab chayns__background-color--0 active' : 'tab chayns__background-color--0'}
                                                     onClick={() => {
                                                         if (this.state.complex != 2)
                                                             this.setState({ complex: 2 })
@@ -509,7 +509,7 @@ export default class ExternViewAccordion extends React.Component {
                                             </td>
                                             <td>
                                                 <div
-                                                    className={this.state.complex === 3 ? 'tab chayns__background-color--0 active' : 'tab chayns__background-color--0'}
+                                                    className={this.state.complex === 3 | this.state.complex === 0 ? 'tab chayns__background-color--0 active' : 'tab chayns__background-color--0'}
                                                     onClick={() => {
                                                         if (this.state.complex != 3)
                                                             this.setState({ complex: 3 })
