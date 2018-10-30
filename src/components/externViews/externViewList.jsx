@@ -381,7 +381,7 @@ export default class ExternViewAccordion extends React.Component {
                         </div>
                     </div>
                     <Accordion head={'Marketing'}>
-                        <Accordion head={'Event Marketing'}>
+                        <Accordion head={'Event Marketing'} style={{marginBottom: '0px', borderBottom: '0px'}}>
                             <td>
                                 <div
                                     className="icon__accordion__head"
