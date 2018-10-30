@@ -11,7 +11,7 @@ export default merge(
     {
         mode: 'production',
         output: {
-            path: '//tappqa/Training/2018/YS/OrgchartPrototyp'
+            path: '//tappqa/Training/2018/LD/OrgchartPrototyp'
         },
         devtool: 'inline-source-map',
         plugins: [
