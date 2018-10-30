@@ -10,6 +10,9 @@ export default merge(
     common,
     {
         mode: 'production',
+        output: {
+            path: '//tappqa/Training/2018/YS/OrgchartPrototyp'
+        },
         devtool: 'inline-source-map',
         plugins: [
             new HtmlWebpackPlugin({

@@ -4,9 +4,6 @@ import Intro from './components/Intro';
 import Content from './components/Content';
 
 
-/**
- * Stateless Component App which holds the Components Intro and Content
- */
 const App = () => (
     <div>
         <Intro/>
